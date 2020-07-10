@@ -1,0 +1,78 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="tank,html5,canvas,ai">
+  <title>BATTLE CITY AI</title>
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <script >window.onload = function () { main() }</script>
+</head>
+
+<body>
+  <h1 id="header">
+    Battle City AI
+  </h1>
+  <div class="container">
+
+    <div id="srcImg">
+      <img src="img/tankAll.gif" id="tankAll" />
+    </div>
+
+    <div id="game">
+      <canvas id="wall" width="512" height="448"></canvas>
+      <canvas id="main" width="512" height="448"></canvas>
+      <canvas id="grass" width="512" height="448"></canvas>
+      <canvas id="upp" width="512" height="448"></canvas>
+      <canvas id="stage" width="512" height="448"></canvas>
+    </div>
+
+
+    <div class="bottom">
+      <ul id="player1">
+        主机Player1
+        <li>方向: ↑ ↓ → ←</li>
+        <li>开火:空格/回车</li>
+      </ul>
+      <ul id="player2">
+        副机Player2
+        <li>方向: w s a d</li>
+        <li>开火: j</li>
+      </ul>
+    </div>
+    <div id="fast-mode"></div>
+  </div>
+  <canvas id="astar" width="512" height="448"></canvas>
+  </div>
+
+
+
+  <audio id="attack" src="sound/attack.mp3"></audio>
+  <audio id="bomb0" src="sound/bomb0.mp3"></audio>
+  <audio id="bomb1" src="sound/bomb1.mp3"></audio>
+  <audio id="food" src="sound/food.mp3"></audio>
+  <audio id="stageStart" src="sound/stageStart.mp3"></audio>
+  <audio id="shootOver" src="sound/shootOver.mp3"></audio>
+</body>
+<script  src="js/Const.js"></script>
+<script  src="js/Sound.js"></script>
+<script  src="js/Map.js"></script>
+<script  src="js/MapLevel.js"></script>
+<script  src="js/StageStart.js"></script>
+<script  src="js/Sprite.js"></script>
+<script  src="js/Score.js"></script>
+<script  src="js/TankStart.js"></script>
+<script  src="js/Tank.js"></script>
+<script  src="js/MyTank.js"></script>
+<script  src="js/Bullet.js"></script>
+<script  src="js/HitFx.js"></script>
+<script  src="js/BombFx.js"></script>
+<script  src="js/Food.js"></script>
+<script  src="js/ScoreBoard.js"></script>
+<script  src="js/Score.js"></script>
+<script  src="js/Num.js"></script>
+<script  src="js/Main.js"></script>
+<script  src="js/BinaryHeap.js"></script>
+<script  src="js/AI.js"></script>
+
+</html>

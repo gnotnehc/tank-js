@@ -1,0 +1,75 @@
+body,
+div,
+p,
+canvas {
+  margin: 0;
+  padding: 0;
+}
+html,body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: #333;
+  color: #ff9966;
+
+}
+
+
+a:link {
+  color: #fff;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #f26;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #f00;
+  text-decoration: underline;
+}
+
+.container {}
+
+#header {
+  margin: 0;
+  text-align: center;
+  padding:10px 0;
+}
+.bottom {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#game {
+  position: relative;
+  height: calc(448px + 10vh);
+}
+
+#game canvas {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  margin-left: -256px;
+}
+
+#srcImg {
+  display: none;
+}
+
+#astar {
+  margin: 100px 0px 0px 600px;
+  display: none;
+}
+
+
+
+#fast-mode {
+  position: absolute;
+  left: 670px;
+  top: 200px;
+}
