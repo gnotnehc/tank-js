@@ -30,7 +30,7 @@ ScoreBoard.prototype.drawPlayers = function () {
     graphics.drawImage(img, 30 + this.xx, this.yy, 30, 32, 464, 304, 30, 32);//player2
   }
 
-  graphics.drawImage(img, 60 + this.xx, this.yy, 30, 32, 464, 352, 32, 30);//������
+  graphics.drawImage(img, 60 + this.xx, this.yy, 30, 32, 464, 352, 32, 30);//
 };
 
 

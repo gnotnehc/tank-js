@@ -1,11 +1,11 @@
 //UTF-8
-var key = {};												
+var key = {};
 
-var num = new Num();										
-var stageStart = new StageStart();							
-var gamesOver = new GameOver();									
+var num = new Num();
+var stageStart = new StageStart();
+var gamesOver = new GameOver();
 var gameStart = new GameStart();
-var food = new Food();										
+var food = new Food();
 var tankRun = new TankRun();
 
 var scoreBoard = new ScoreBoard();
@@ -13,22 +13,22 @@ var sound = new Sound();
 var firstLife = 3;
 
 var time;
-var tankNum = 0;																			
-var level = 1;												
+var tankNum = 0;
+var level = 1;
 
 var playerNum = 1;
 
 
-var stopTime;													
-var homeTime;													
+var stopTime;
+var homeTime;
 
-var startLocation = [192, 0, 384];								
+var startLocation = [192, 0, 384];
 
-var tanks = [];																		
-var bullets = [];											
-var hitFxs = [];												
-var bombFxs = [];											
-var tankStarts = [];										
+var tanks = [];
+var bullets = [];
+var hitFxs = [];
+var bombFxs = [];
+var tankStarts = [];
 var scoreNums = [];
 
 var player1, player2;
@@ -39,6 +39,7 @@ var intval = 300;
 var nextIntval = 300;
 
 function main () {
+  // 调整音乐声音大小
   var audio = document.getElementsByTagName('audio')
   for (var i = 0; i < audio.length; i++) {
     audio[i].volume = 0.3

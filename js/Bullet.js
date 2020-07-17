@@ -182,7 +182,7 @@ Bullet.prototype.hitTanks = function () {
     if (this.hitTestObject(tanks[i]) && tanks[i].type != this.type) {
       var tankScore;
 
-      if (this.type == 0)                                        //�ӵ����Լ������
+      if (this.type == 0)                                       
       {
         tanks[i].life--;
 
@@ -258,7 +258,7 @@ function updataBullets () {
           if (i < j) { i--; }
           else { i -= 2; }
 
-          j = 1000;//�˳�ѭ��
+          j = 1000;
         }
       }
     }
@@ -269,12 +269,12 @@ function updataBullets () {
     if (i >= bullets.length) { return; }
 
     if (bullets[i].checkHit()) {
-      isHit = true;//����ǽ��
+      isHit = true;
     }
 
     if (bullets[i].hitTanks()) {
       isHit = true;
-    }//����̹��
+    }
 
 
     if (isHit && bullets[i]) {
